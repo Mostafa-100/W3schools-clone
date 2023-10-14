@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+	--mainColor: #04AA6D;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+}
+
+header .top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+header .top-bar .part-one img {
+	height: 37px;
+	vertical-align: middle;
+}
+
+header .top-bar a {
+	text-decoration: none;
+	display: inline-block;
+	color: #000;
+}
+
+header .part-one {
+	font-size: 0;
+}
+
+header .top-bar .part-one a {
+	padding: 19px 13px;
+	font-size: 16px;
+}
+
+header .top-bar .a-for-logo {
+	padding: 11px 13px !important;
+}
+
+header .top-bar .button:hover {
+	background-color: var(--mainColor);
+	color: #fff;
+}
+
+header .top-bar .button:hover span {
+	color: #000;
+}
+
+header .top-bar a i {
+	margin-left: 3px;
+}
+
+header .top-bar span.new {
+	display: inline-block;
+    border: 1px solid #000;
+    border-radius: 12px;
+    margin-left: 5px;
+    font-size: 9px;
+    padding: 3px 7px;
+    font-weight: 500;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+header .top-bar .part-two .website-button,
+header .top-bar .part-two .login-button {
+    border-radius: 23px;
+    padding: 9px 16px;
+}
+
+.paid {
+	margin: 0 20px;
+}
+
+.website-button {
+	background-color: rgb(255 0 0 / 19%);
+}
+
+.login-button {
+	background-color: var(--mainColor);
+	color: #fff !important;
+}
+
+.part-one .menu {
+	display: none !important;
+}
+
+@media (max-width: 962px) {
+	.website-button, .paid {
+		display: none !important;
+	}
+}
+
+@media (max-width: 700px) {
+	.part-one .menu {
+		display: inline-block !important;
+	}
+
+	.part-one .link {
+		display: none !important;
+	}
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	background-color: #333;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.links nav ul li {
+	float: left;
+}
+
+.links nav ul li {
+	list-style: none;
+}
+
+.links nav ul a {
+	text-decoration: none;
+	color: #fff;
+	padding: 9px 13px;
+	display: inline-block;
+}
+
+.links i {
+	color: #fff;
+	cursor: pointer;
+	vertical-align: middle;
+	font-size: 17px;
+	padding: 10px 13px;
+}
+
+.links .icons {
+	margin-left: auto;
+}
+
+.links a:hover,
+.links i:hover {
+	background-color: #000;
+}
+
+/* Content */
+
+.content {
+	display: flex;
+}
+
+.content aside {
+	background-color: #eee;
+	overflow-y: scroll;
+	height: 100vh;
+	width: 225px;
+	padding: 15px 0;
+}
+
+.content aside h1 {
+	font-weight: 400;
+	font-size: 21px;
+	padding: 3px 15px;
+}
+
+.content aside li {
+	list-style: none;
+}
+
+.content aside li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+	padding: 4px 15px;
+	width: 100%;
+}
+
+.content aside li a:hover {
+	background-color: rgb(0 0 0 / 10%);
+}
+
+.content main {
+	padding: 30px 0;
+	flex-grow: 1;
+}
+
+main h1 {
+	font-weight: 400;
+	padding: 0 25px;
+}
+
+main .buttons {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 25px;
+}
+
+main .buttons button {
+	border: none;
+	background-color: var(--mainColor);
+	color: #fff;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 11px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px 0;
+}
+
+main .paragraph {
+	background-color: #D9EEE1;
+	padding: 18px;
+}
+
+.paragraph p {
+	line-height: 1.9;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.paragraph button {
+	border: none;
+	background-color: var(--mainColor);
+	color: #fff;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 11px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px 0;
+}
+
+@media (max-width: 995px) {
+	aside {
+		display: none;
+	}
+}
